@@ -1,0 +1,45 @@
+extends layout
+block content
+  .w3-card-4
+    header.w3-container.w3-purple
+      h1 Registo: #{contrato.idcontrato}          
+    .w3-container.w3-margin
+      table.w3-table-all
+        tr
+          td #[b Id]
+          td=contrato._id
+        tr
+          td #[b Id Contrato]
+          td=contrato.idcontrato
+        tr
+          td #[b nAnuncio ]
+          td=contrato["nAnuncio"]
+        tr
+          td #[b tipoprocedimento]
+          td=contrato["tipoprocedimento"]
+        tr
+          td #[b objectoContrato]
+          td=contrato["objectoContrato"]
+        tr
+          td #[b dataPublicacao]
+          td=contrato["dataPublicacao"]
+        tr
+          td #[b dataCelebracaoContrato]
+          td=contrato["dataCelebracaoContrato"]
+        tr
+          td #[b precoContratual]
+          td=contrato["precoContratual"]
+        tr
+          td #[b prazoExecucao ]
+          td=contrato["prazoExecucao"]
+        tr
+          td #[b NIPC_entidade_comunicante]
+          td=contrato["NIPC_entidade_comunicante"]
+        tr
+          td #[b entidade_comunicante]
+          td=contrato["entidade_comunicante"]
+        tr
+          td #[b fundamentacao]
+          td=contrato["fundamentacao"]
+      p 
+        a(href="/") [Página inicial]
